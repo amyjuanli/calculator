@@ -19,6 +19,9 @@ function clickedHander(e) {
     } else if (btnVal === 'CE') {
         input = input.slice(0, -1);
     } else if (btnVal === '=') {
+        if(operators.indexOf(input[input.length-1]) > -1) {
+            input = input.slice(0, input.length-1);
+        }
         equation = input.replace(/×/g, '*').replace(/÷/g, '/'); // replace with the JS operators
         result = Math.round(eval(equation) * 1000000) / 1000000; // attempt to solve the inaccuracy precision (not a perfect solution) 
         input = result + ''; // convert number to string (for the purpose of using indexOf on it later on)
