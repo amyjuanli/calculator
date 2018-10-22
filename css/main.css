@@ -2,13 +2,17 @@ body {
     width: 100%;
     background: #e6e6e6;
 }
-#calculator {
+#container {
     width: 40%;
-    margin: 5% auto;
+    margin: 10% auto;
+}
+#calculator {
+    width: 100%;
     text-align: center;
     background: #0e0d0d;
     border:0.5px solid #4c4c4c;
     border-radius: 6px;
+    padding: 10px;
 }
 h1 {
     font-family: Lobster;
@@ -24,23 +28,17 @@ h1 {
     font-size: 2em;
     border: black 0.5px solid;
     border-radius: 6px;
-    margin-bottom: .3em;
+    margin-bottom: .4em;
     margin-top: .2em;
 }
-#btns > button {
+button {
     width: 24%;
-    eight: 36px;
     font-size: 1.4em;
     border-radius: 6px;
     background:#4c4c4c;
     color: white;
 }
-/* .btn-number {
-    background:#4c4c4c;
-    color: white;
+button:hover {
+    background: #929090;
 }
-.btn-operator {
-    background:#d4a710; 
-    color: white;
-} */
 
